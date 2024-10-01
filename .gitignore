@@ -1,0 +1,45 @@
+# Ignore WordPress core files (except wp-content)
+wp-admin/
+wp-includes/
+
+# Ignore environment-specific and sensitive files
+wp-config.php
+wp-config-*.php
+.htaccess
+error_log
+
+# Ignore Composer dependencies
+vendor/
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore log and system files
+*.log
+*.sql
+*.sqlite
+*.env
+*.DS_Store
+*.idea/
+*.vscode/
+
+# Ignore uploads (if you don't want to track media files)
+wp-content/uploads/
+
+# Ignore WordPress upgrade files
+wp-content/upgrade/
+
+# Ignore cache and temp files
+wp-content/cache/
+wp-content/backup-*/
+
+# Ignore WordPress plugins and themes (if managed by composer or another system)
+wp-content/plugins/
+wp-content/themes/twentytwenty*/  # Default themes, can be ignored if not customized
+
+# Ignore docker-related files (optional)
+docker-compose.override.yml
+docker-compose.yml
+
+# Ignore the wordpress directory if it's mounted from Docker
+wordpress/
